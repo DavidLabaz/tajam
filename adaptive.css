@@ -1,0 +1,29 @@
+@media only screen and (max-width: 992px) {
+	.team .content .images {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.team .content .images .block {
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.team .content .images {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.team .content .images .block {
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.form .content .ourHappyClient .images {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.form .content .ourHappyClient .images {
+		width: 400px;
+	}
+}

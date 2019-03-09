@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url('./images/put-your-image-here-background.png') no-repeat center / cover;
+	
+}
+
+header .mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.85;
+	background-image: linear-gradient(to right, #09052f, #311d5e);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+.container {
+	width: 63%;
+	margin: 0 auto;
+}
+
+#hidden-menu {
+	visibility: hidden;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	z-index: 1000;
+	background-image: linear-gradient(to right, #09052f, #311d5e);
+	transform: translateY(-100%);
+	transition: all .7s ease;
+}
+
+#hidden-menu .container ul li {
+	list-style: none;
+}
+
+#hidden-menu .container ul li a {
+	text-decoration: none;
+	font-family: Roboto-Black, sans-serif;
+	font-size: 50px;
+	color: white;
+	transition: all .7s ease;
+}
+
+#hidden-menu .container ul li:hover a {
+	transition: all .7s ease;
+	color: #00e0d0;
+}
+
+#hidden-menu #close #close-button {
+	width: 70px;
+	height: 70px;
+}
+
+#hidden-menu #close {
+	position: absolute;
+	top: 55px;
+	right: 55px;
+}
+
+header .content {
+	position: relative;
+}
+
+header svg {
+	display: none;
+}
+
+header .content .logo h5 {
+	font-size: 30px;
+	font-family: Roboto, sans-serif;
+	color: #00e0d0;
+	margin: 10px 10px;
+}
+
+header nav {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 1000;
+	transition: all .7s ease;
+}
+
+header nav ul {
+	display: flex;
+	padding-left: 270px;
+}
+
+header nav ul li {
+	list-style: none;
+	margin-right: 40px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	font-family: Roboto-Black, sans-serif;
+	font-size: 13px;
+	color: white;
+	transition: all .7s ease;
+}
+
+header nav ul li:hover a {
+	transition: all .7s ease;
+	color: #00e0d0;
+}
+
+header .content .texts {
+	width: 60%;
+	text-align: center;
+	margin:0 auto;
+	padding: 140px 0px 20px 0px;
+}
+
+
+header .content .texts h1 {
+	font-size: 32px;
+	font-family: Playfair Display, serif;
+	font-weight: bold;
+	color: white;
+}
+
+header .content .texts hr {
+	width: 50px;
+  	height: 2px;
+  	border: none;
+  	background-color: #00e0d0;
+}
+header .content .texts p {
+	font-size: 14px;
+	font-family: Roboto, sans-serif;
+	line-height: 1.71;
+	font-weight: normal;
+	color: white;
+}
+
+header .content .button-learnMore {
+	padding-top: 50px;
+	text-align: center;
+}
+
+header .content .button-learnMore button {
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	color: #00e0d0;
+	font-size: 16px;
+	font-family: HammersmithOne-Regular, sans-serif;
+	border: 2px solid #00e0d0;
+	background-color: transparent;
+	transition: all .7s ease;
+}
+
+header .content .button-learnMore button:hover {
+	background-color: #00e0d0;
+	color: #311d5e;
+	transition: all .7s ease;
+}
+
+#nav.scroll-background {
+    background-color: white;
+    box-shadow: 0px 2px 14px -3px #938787;
+    transition: all .7s ease;
+}
+
+#nav.scroll-background ul li > a {
+    color: #311d5e;
+}
+
+.ourStor .content {
+	display: flex;
+}
+
+.ourStor .content .text {
+	width: 539px;
+	padding: 28px 0px 31px 0px;
+}
+
+.ourStor .content .logo {
+	margin-top: 40px;
+	padding: 0px 70px 0px 0px;	
+}
+
+.ourStor .content .text h1 {
+	font-size: 22px;
+	font-family: Playfair Display-Bold, serif;
+	color: #413d4b;
+	font-weight: bold;
+}
+
+.ourStor .content .text .One, .Two {
+	font-size: 14px;
+	font-family: Roboto-Light, sans-serif;
+	line-height: 1.57;
+	color: rgba(65, 61, 75, 0.75);
+}
+
+.ourStor .content .button-learnMore button {
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	color: #00e0d0;
+	font-size: 16px;
+	font-family: HammersmithOne-Regular, sans-serif;
+	border: 2px solid #00e0d0;
+	background-color: transparent;
+	transition: all .7s ease;
+}
+
+.ourStor .content .button-learnMore button:hover {
+	background-color: #00e0d0;
+	color: #311d5e;
+	transition: all .7s ease;
+}
+
+.ourStor .content .video {
+	/*display: flex;
+	justify-content: center;*/
+}
+
+.watchOurStory {
+	position: relative;
+	height: 670px;
+	transition: all 2s ease;
+}
+
+.watchOurStory .Mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.85;
+	background-image: linear-gradient(to right, #09052f, #311d5e);
+}
+
+.watchOurStory .content .control {
+	display: flex;
+	justify-content: center;
+	margin:0 auto;
+}
+
+.watchOurStory .content .control .play-button {
+	position: absolute;
+	padding-top: 285px;
+	color: white;
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+
+.watchOurStory .video {
+	display: flex;
+}
+
+.background-city {
+	position: absolute;
+	height: 670px;
+}
+
+.background-city img {
+	width: 100%;
+	height: 100%;
+}
+
+.watchOurStory .play-button {
+	
+}
+
+.expertize {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.expertize .content h1 {
+	font-size: 22px;
+	font-family: PlayFair Display, sans-serif;
+	color: #413d4b;
+	font-weight: bold;
+}
+
+.expertize .content .LoremIpsum {
+	font-size: 14px;
+	font-family: PlayFair Display, sans-serif;
+	color: rgba(47, 45, 53, 0.75);
+	font-weight: normal;
+}
+
+.expertize .content .grey-hr {
+	width: 50px;
+	height: 2px;
+	opacity: 0.3;
+	border: none;
+	margin-bottom: 25px;
+	background-color: #413d4b;
+}
+
+.expertize .content .table {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.expertize .content .table .table1, .table2, .table3, .table4, .table5, .table6 {
+	width: 25%;
+	padding: 20px 10px;
+	flex-direction: column;
+}
+
+.expertize .content .table .table1, .table2, .table4, .table5 {
+	border-right: 1px solid black;
+}
+
+.expertize .content .table .table4, .table5, .table6 {
+	width: 25%;
+	flex-direction: column;
+	border-top: 1px solid black;
+}
+
+.expertize .content .table .table1, .table2, .table3, .table4, .table5, .table6, .textOne {
+	font-size: 14px;
+	font-family: Roboto-Black, sans-serif;
+	color: #413d4b;
+	font-weight: 900;
+}
+
+.expertize .content .table .table1, .table2, .table3, .table4, .table5, .table6, .textTwo {
+	font-size: 14px;
+	font-family: Roboto, sans-serif;
+	color: rgba(51, 51, 51, 0.75);
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+.expertize .content .table .content .blockOne, .blockTwo {
+	display: flex;
+	justify-content: center;
+}
+
+.expertize .content .table .content .blockTwo {
+	padding-bottom: 70px;
+}
+
+.team {
+	position: relative;
+	background: url('./images/put-your-image-here-background.png') no-repeat center / cover;
+}
+
+.team .content {
+	position: relative;
+	color: white;
+}
+
+.team .content .discription {
+	text-align: center;
+	padding-top: 100px;
+}
+
+.team .content .discription p {
+	color: grey;
+}
+
+.team .content .images {
+	display: flex;
+	margin-top: 50px;
+}
+
+.team .content .discription hr {
+	width: 7%;
+}
+
+.team .content .block {
+	width: 298px;
+	height: 330px;
+	border: 1px white solid;
+	text-align: center;
+	margin-right: 15px;
+}
+
+.team .content .images .block .text {
+	padding-top: 25px;
+}
+
+.photo-portrait {
+	height: 220px;
+}
+
+.photo-portrait img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	
+}
+
+.weAreHiring {
+	text-align: center;
+	margin-top: 70px;
+	padding-bottom: 70px;
+}
+
+.weAreHiring .text {
+	color: grey;
+	margin-bottom: 25px;
+}
+
+.weAreHiring button {
+	border: 2px solid #00e0d0;
+	border-radius: 5px;
+	padding: 10px 37px 10px 37px;
+	background-color: transparent;
+	color: #00e0d0;
+	font-family: Hammersmith One, sans-serif;
+	transition: all .7s ease;
+}
+
+.weAreHiring button:hover {
+	transition: all .7s ease;
+	background-color: #00e0d0;
+	color: #311d5e;
+	cursor: pointer;
+}
+
+.team .masks {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.85;
+	background-image: linear-gradient(to right, #09052f, #311d5e);
+}
+
+.form {
+	padding: 70px 0px;
+}
+
+.form .content {
+	display: flex;
+}
+
+.form .content .giveUs {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.form .content .giveUs h1 {
+	font-size: 22px;
+	font-family: PlayFair Display, sans-serif;
+	color: #413d4b;
+	letter-spacing: 1.1px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.form .content .giveUs input, textarea {
+	font-size: 15px;
+	font-family: Roboto, sans-serif;
+	color: rgba(65, 61, 75, 0.5);
+	width: 75%;
+	border: 1px #00000021 solid;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+.form .content .ourHappyClient h1 {
+	font-size: 22px;
+	font-family: PlayFair Display, sans-serif;
+	color: #413d4b;
+	letter-spacing: 1.1px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.form .content .ourHappyClient {
+	width: 37%;
+}
+
+.form .content .ourHappyClient .images {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.firms {
+	width: 50%;
+	margin: 15px 0px;
+}
+
+.button-submit .submit {
+	border: 2px solid #00e0d0;
+	padding: 10px 40px 5px 40px;
+	background-color: transparent;
+	color: #00e0d0;
+	font-family: Hammersmith One, sans-serif;
+	transition: all .7s ease;
+}
+
+.button-submit .submit:hover {
+	transition: all .7s ease;
+	background-color: #00e0d0;
+	color: #311d5e;
+	cursor: pointer;
+}
+
+.maskLast {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.85;
+	background-image: linear-gradient(to right, #09052f, #311d5e);
+}
+
+.lastblock {
+	width: 100%;
+	position: relative;
+	padding: 70px 0px 70px 0px;
+	background: url(./images/footer.png) no-repeat center / cover;
+	background-color: #1d0035;
+}
+
+.lastblock .content {
+	position: relative;
+}
+
+.lastblock .content .tajam .plain {
+	display: flex;
+}
+
+.lastblock .content .tajam img {
+	width: 50px;
+	height: 50px;
+}
+
+.lastblock .content .tajam h5 {
+	color: #00e0d0;
+	font-size: 30px;
+	font-family: Roboto, sans-serif;
+	margin: 10px 10px;
+	font-weight: 100;
+}
+
+.lastblock .content .tajam {
+	width: 30%;
+}
+
+.lastblock .content .info p {
+	font-size: 14px;
+	font-family: Roboto, sans-serif;
+	color: white;
+	letter-spacing: 1px;
+	line-height: 1.76;
+}
+
+.lastblock .content .ourStudio {
+	width: 30%;
+	margin-left: 66px;
+}
+
+.lastblock .content .ourStudio .logo {
+	font-size: 15px;
+	font-family: Roboto-Black, sans-serif;
+	font-weight: 600;
+	color: white;
+}
+
+.lastblock .content .ourStudio .street {
+	font-family: Roboto-Light, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.9px;
+	color: white;
+	padding-top: 24px;
+	padding-bottom: 22px;
+}
+
+.lastblock .content .ourStudio .phone {
+	font-family: Roboto-Light, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	color: white;
+}
+
+.lastblock .content .stayInTouch {
+	width: 30%;
+	margin-left: 66px;
+}
+
+.lastblock .content .stayInTouch .logo {
+	font-family: Roboto-Light, sans-serif;
+	padding-bottom: 22px;
+	font-size: 15px;
+	font-weight: 600;
+	color: white;
+}
+
+.lastblock .content .stayInTouch #subscribe {
+	padding: 14px 29px 14px 16px;
+	font-family: Roboto-Light, sans-serif;
+	opacity: 0.7;
+	letter-spacing: 0.5;
+	color: black;
+	border: 1px solid white;
+	background-color: transparent;
+}
+
+.lastblock .content .stayInTouch #subscribe::placeholder {
+	color: white;
+}
+
+.lastblock .content .stayInTouch .plane-button img {
+	width: 14px;
+}
+
+.lastblock .content .stayInTouch .plane-button {	
+	opacity: 0.5;
+	padding: 14px 19px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.lastblock .content .faq .termins, .right {
+	display: flex;
+}
+
+.lastblock .content .faq p, .right {
+	font-family: Roboto-Regular, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.37px;
+	margin-right: 27px;
+	color: white;
+}
+
+.lastblock .content .block1 {
+	display: flex;
+}
+
+.lastblock .content .block2 .faq {
+	display: flex;
+}
+
+.lastblock .content .block2 .faq p {
+	text-align: left;
+	margin-top: 50px;
+}
+
+.lastblock .content .block2 .right {
+	text-align: right;
+	margin-top: 50px;
+	padding-left: 540px;
+}
+
+@media only screen and (max-width: 1200px) {
+	header nav ul li {
+		display: none;
+	}
+	header #hidden-menu-svg svg {
+		display: flex;
+	}
+	header .content .texts {
+		width: 95%;
+	}
+	section .content .giveUs {
+		width: 70%;
+	}
+	header nav ul {
+		display: none;
+	}
+	header nav {
+		justify-content: space-around;
+	}
+}
+@media only screen and (max-width: 768px) {
+
+}
